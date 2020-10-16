@@ -24,7 +24,7 @@ namespace SQLdemoCsharp {
                         query = Console.ReadLine();
                         if (query == "quit")
                         {
-                            Console.WriteLine("Operations terminated.\n..\n...");
+                            Console.WriteLine("B2 is now in charge.\n..\n...");
                             return;
                         }
                         SqlCommand command = new SqlCommand(query, cnn);
