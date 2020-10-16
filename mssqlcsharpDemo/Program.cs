@@ -13,6 +13,8 @@ namespace SQLdemoCsharp {
             cnn = new SqlConnection(connetionString);
             try
             {
+                //N00bery has happened here.
+                //Love, Dave.
                 cnn.Open();
                 Console.WriteLine("Connection Open ! ");
                 while (true)
