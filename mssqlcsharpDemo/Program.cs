@@ -26,7 +26,7 @@ namespace SQLdemoCsharp {
                         query = Console.ReadLine();
                         if (query == "quit")
                         {
-                            Console.WriteLine("B2 is now in charge.\n..\n...");
+                            Console.WriteLine("Attempting a conflict...");
                             return;
                         }
                         SqlCommand command = new SqlCommand(query, connection);
