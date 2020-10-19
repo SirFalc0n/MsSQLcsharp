@@ -7,15 +7,15 @@ namespace SQLdemoCsharp {
         {
 
             string connetionString = null;
-            SqlConnection cnn;
+            SqlConnection connection;
 
             connetionString = "Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;User ID=aborden;Password=password";
-            cnn = new SqlConnection(connetionString);
+            connection = new SqlConnection(connetionString);
             try
             {
                 //N00bery has happened here.
                 //Love, Dave.
-                cnn.Open();
+                connection.Open();
                 Console.WriteLine("Connection Open ! ");
                 while (true)
                 {
@@ -29,7 +29,7 @@ namespace SQLdemoCsharp {
                             Console.WriteLine("B2 is now in charge.\n..\n...");
                             return;
                         }
-                        SqlCommand command = new SqlCommand(query, cnn);
+                        SqlCommand command = new SqlCommand(query, connection);
                         SqlDataReader dataReader = command.ExecuteReader();
 
                         while (dataReader.Read())
@@ -52,7 +52,7 @@ namespace SQLdemoCsharp {
             {
                 Console.WriteLine(ex.ToString());
             }
-            cnn.Close();
+            connection.Close();
 
         }
     }
